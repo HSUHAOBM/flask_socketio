@@ -48,5 +48,5 @@ def broadcast(data):
     emit("message",session["user"]+" from "+session["room"]+"  "+data+" \n",broadcast=True)
 
 if __name__ == "__main__":
-    socketio.run(app, port=6500)
-    # socketio.run(app, host="0.0.0.0", port=5000)
+    # socketio.run(app, port=6500)
+    socketio.run(app, host="0.0.0.0", port=5000)
